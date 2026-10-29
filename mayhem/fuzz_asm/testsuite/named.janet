@@ -1,0 +1,1 @@
+{:bytecode @[(load-integer 1 1) (load-integer 2 1) (add 0 1 2) (return 0)] :arity 0 :slotcount 3 :vararg true :name "f"}

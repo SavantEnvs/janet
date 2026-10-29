@@ -1,0 +1,1 @@
+(var i 0) (while (< i 10) (++ i)) (for j 0 3 (set i (+ i j))) (try (error "x") ([e] e))

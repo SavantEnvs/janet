@@ -1,0 +1,1 @@
+{:bytecode @[(load-integer 0 42) (return 0)] :arity 0 :slotcount 1}

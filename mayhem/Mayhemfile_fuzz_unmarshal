@@ -1,0 +1,9 @@
+project: savantenvs/janet
+target: fuzz_unmarshal
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_unmarshal/testsuite
+cmds:
+  - cmd: /mayhem/builddir/fuzz/fuzz_unmarshal
+    libfuzzer: true
+    timeout: 10

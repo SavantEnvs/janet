@@ -1,0 +1,9 @@
+project: savantenvs/janet
+target: fuzz_dostring
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_dostring/testsuite
+cmds:
+  - cmd: /mayhem/builddir/fuzz/fuzz_dostring
+    libfuzzer: true
+    timeout: 10

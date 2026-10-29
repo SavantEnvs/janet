@@ -1,0 +1,1 @@
+(def t @{:a 1 :b [1 2 3]}) (each k (keys t) (print k)) (string/format "%j" t)

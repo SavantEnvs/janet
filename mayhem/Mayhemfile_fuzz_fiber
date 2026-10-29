@@ -1,0 +1,9 @@
+project: savantenvs/janet
+target: fuzz_fiber
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_fiber/testsuite
+cmds:
+  - cmd: /mayhem/builddir/fuzz/fuzz_fiber
+    libfuzzer: true
+    timeout: 10

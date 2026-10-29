@@ -1,0 +1,1 @@
+{:bytecode @[(load-constant 0 "k") (jump-if-not 0 :done) (load-nil 0) :done (return 0)] :arity 0 :slotcount 1 :constants @["k"]}

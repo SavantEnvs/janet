@@ -1,0 +1,9 @@
+project: savantenvs/janet
+target: fuzz_peg
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_peg/testsuite
+cmds:
+  - cmd: /mayhem/builddir/fuzz/fuzz_peg
+    libfuzzer: true
+    timeout: 10
